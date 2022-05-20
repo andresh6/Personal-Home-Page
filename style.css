@@ -20,7 +20,15 @@
 }
 .navbar-toggle
 {
-font-size:25px; 
-background:none; 
-border:none;
+    font-size:25px; 
+    background:none; 
+    border:none;
 }
+.about-portrait{
+    width:100%;
+    text-align: center;
+}
+#picOfAndres{
+    border-radius: 50%;
+    object-fit: cover;
+  }
