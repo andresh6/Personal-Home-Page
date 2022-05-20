@@ -1,1 +1,26 @@
 
+.navbar-custom{
+    background-color: bisque;
+    display: flex;
+}
+#navigation{
+    flex-direction: row;
+    position: absolute;
+    right:0;
+}
+.nav-item{
+    float:left;
+    list-style-type: none;
+    padding-right: 20px;
+    
+}
+.custom-button{
+    background-color: blue;
+    color: Blue;
+}
+.navbar-toggle
+{
+font-size:25px; 
+background:none; 
+border:none;
+}
