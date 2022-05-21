@@ -1,4 +1,4 @@
-
+/*Navbar*/
 .navbar-custom{
     background-color: bisque;
     display: flex;
@@ -24,6 +24,7 @@
     background:none; 
     border:none;
 }
+/*About*/
 .about-portrait{
     width:100%;
     text-align: center;
@@ -32,3 +33,26 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+/*Resume*/
+.languages-List {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .languages-List > div {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+  }
+  .Languages{
+      text-align: center;
+  }
+  .Education{
+      text-align: center;
+  }
+/*Projects*/
+/*Contact Form*/
+/*Page styling*/
