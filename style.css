@@ -24,14 +24,22 @@
     background:none; 
     border:none;
 }
+/*Page*/
+.page{
+    width:100%
+}
 /*About*/
 .about-portrait{
     width:100%;
     text-align: center;
+    background-color: blue;
 }
 #picOfAndres{
     border-radius: 50%;
     object-fit: cover;
+  }
+  .about-bio{
+      background-color: blueviolet;
   }
 
 /*Resume*/
@@ -49,10 +57,37 @@
   }
   .Languages{
       text-align: center;
+      background-color: aquamarine;
   }
   .Education{
       text-align: center;
+      background-color: brown;
+      list-style-type:none;
   }
 /*Projects*/
+.Projects-List{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    background-color: red;
+  }
+      
+.Projects-List > div {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+  }
+  
+.Project-List-Item{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    width:400px;
+    height:400px;
+    margin:20px;
+}
+
 /*Contact Form*/
 /*Page styling*/
