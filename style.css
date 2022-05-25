@@ -1,4 +1,5 @@
 /*Navbar*/
+/*
 .navbar-custom {
   background-color: #b3db98;
   display: flex;
@@ -14,20 +15,70 @@
   padding-right: 20px;
 }
 .custom-button {
-  background-color: blue;
-  color: Blue;
+  background-color: #88db48;
+  color: #88db48;
 }
 .navbar-toggle {
   font-size: 25px;
   background: none;
   border: none;
 }
+*/
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1%;
+  background-color: #255c2e;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  margin-left: 5%;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+.logo_header {
+  display: flex;
+  margin-left: 2%;
+}
+
+.main_nav {
+  display: flex;
+  width: 50%;
+  float: right;
+  margin-right: 2%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.main_nav li {
+  display: inline;
+  color: #ffffff;
+}
+.main_nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /*Page*/
 .page {
   width: 100%;
   background-color: #b3db98;
 }
 /*About*/
+.about {
+  padding: 50px;
+}
 .about-portrait {
   padding: 10px;
   width: 100%;
@@ -46,6 +97,9 @@
 }
 
 /*Resume*/
+.resume {
+  padding: 50px;
+}
 .languages-List {
   padding: 20px;
   display: grid;
@@ -70,16 +124,40 @@
 /*Projects*/
 .card-img-top {
   width: 100%;
-  height: 350px;
+  height: 250px;
   object-fit: cover;
 }
 .card-body {
   background-color: #d7f2c4;
 }
 .card-deck {
-  padding: 20px;
+  padding: 50px;
 }
+
+.custom-btn {
+  color: #fff;
+  background-color: #255c2e;
+  border-color: #255c2e;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+}
+
+.custom-btn:hover,
+.custom-btn:focus,
+.custom-btn:active {
+  /* let's darken #004E64 a bit for hover effect */
+  background: #255c3f;
+  color: #ffffff;
+  border-color: #255c3f;
+}
+
 /*Contact Form*/
+.card {
+  border: #255c2e;
+  border-width: 1px;
+  border-style: solid;
+}
 .contactForm {
   min-width: 250px;
   max-width: 500px;
