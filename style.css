@@ -1,106 +1,95 @@
 /*Navbar*/
-.navbar-custom{
-    background-color: bisque;
-    display: flex;
+.navbar-custom {
+  background-color: #b3db98;
+  display: flex;
 }
-#navigation{
-    flex-direction: row;
-    position: absolute;
-    right:0;
+#navigation {
+  flex-direction: row;
+  position: absolute;
+  right: 0;
 }
-.nav-item{
-    float:left;
-    list-style-type: none;
-    padding-right: 20px;
-    
+.nav-item {
+  float: left;
+  list-style-type: none;
+  padding-right: 20px;
 }
-.custom-button{
-    background-color: blue;
-    color: Blue;
+.custom-button {
+  background-color: blue;
+  color: Blue;
 }
-.navbar-toggle
-{
-    font-size:25px; 
-    background:none; 
-    border:none;
+.navbar-toggle {
+  font-size: 25px;
+  background: none;
+  border: none;
 }
 /*Page*/
-.page{
-    width:100%
+.page {
+  width: 100%;
+  background-color: #b3db98;
 }
 /*About*/
-.about-portrait{
-    width:100%;
-    text-align: center;
-    background-color: blue;
+.about-portrait {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #d7f2c4;
 }
-#picOfAndres{
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  .about-bio{
-      background-color: blueviolet;
-  }
+#picOfAndres {
+  padding: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+}
+.about-bio {
+  background-color: #d7f2c4;
+}
 
 /*Resume*/
 .languages-List {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  
-  .languages-List > div {
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 10px;
-  }
-  .Languages{
-      text-align: center;
-      background-color: aquamarine;
-  }
-  .Education{
-      text-align: center;
-      background-color: brown;
-      list-style-type:none;
-  }
-/*Projects*/
-.Projects-List{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    background-color: red;
-  }
-      
-.Projects-List > div {
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 10px;
-  }
-  
-.Project-List-Item{
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-    width:400px;
-    height:400px;
-    margin:20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.languages-List > div {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+}
+.Languages {
+  text-align: center;
+  background-color: #d7f2c4;
+}
+.Education {
+  text-align: center;
+  background-color: #d7f2c4;
+  list-style-type: none;
+}
+/*Projects*/
+.card-img-top {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.card-body {
+  background-color: #d7f2c4;
+}
+.card-deck {
+  padding: 20px;
+}
 /*Contact Form*/
-.contactForm{
-    min-width: 250px;
-max-width: 500px;
-max-height: 700px;
-background-color: var(--black);
-color: var(--white);
-border-radius: 10px;
-padding: 20px;
-margin: auto;
+.contactForm {
+  min-width: 250px;
+  max-width: 500px;
+  max-height: 700px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
 }
-#contactHeader{
-    text-align: center;
+#contactHeader {
+  text-align: center;
 }
-/*Page styling*/

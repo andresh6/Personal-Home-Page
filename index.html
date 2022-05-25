@@ -56,7 +56,7 @@
 <div class="page">
     <div class="about row py-5 mt-5">
         <div class='about-portrait col-12 col-md-5'>
-           <img id="picOfAndres" src="pictures/IMG-9198.jpg" alt="a headshot photo of Andres Herrera "width="350px" height="350px" id="picOfAndres">
+           <img id="picOfAndres" src="pictures/IMG-9198.jpg" alt="a headshot photo of Andres Herrera " id="picOfAndres">
         </div>
         <div class='about-bio col-12 col-md-7 p-5'>
             <h2>Hey, i'm Andres, a recent CS graduate from PSU</h2>
@@ -92,23 +92,39 @@
         </div>
     </div>
     <!--Projects-->
-    <div class="row py-5 mt-1">
-        <div class="Projects col-12  p-5">
-            <h2>Projects</h2>
-            <div class="Projects-List">
-                <div class="row">
-                    <div class="Project-List-Item col-lg-6 col-sm-12 mt-5">Curlo</div>
-                    <div class="Project-List-Item col-lg-6 col-sm-12 mt-5">ChocAn</div>
-                </div>
-                <div class="row">
-                    <div class="Project-List-Item col-lg-6 col-sm-12 mt-5">FTP-Server</div>
-                    <div class="Project-List-Item col-lg-6 col-sm-12 mt-5">Compiler</div>
-                </div>
-              </div>
-            <div>  
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="./pictures/index.png" alt="GithubLogo">
+        <div class="card-body">
+          <h5 class="card-title">FTP-Server</h5>
+          <p class="card-text">Allows transfering of files to and and from your local network and a remote server</p>
+          <a href="#" class="btn btn-primary">Github</a>
         </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./pictures/curlo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Curlo</h5>
+          <p class="card-text">A website dedicated to curling. Allows Hosts and Teams to create accounts and set up games.
+             Teams will receive a glicko rating depending on there performance and will be able to see a rating table with top curling teams</p>
+          <a href="#" class="btn btn-primary">Github</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./pictures/index.png" alt="githubLogo">
+        <div class="card-body">
+          <h5 class="card-title">ChocAn</h5>
+          <p class="card-text">A fictitious health care company. Allows fo member management as well as creating of weekly reports</p>
+          <a href="#" class="btn btn-primary">Github</a>
+        </div>
+      </div>
     </div>
-</div>
+
+
+
+
+
+    <!---->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
