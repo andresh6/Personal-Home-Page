@@ -146,7 +146,7 @@
   list-style-type: none;
 }
 /*Projects*/
-.card-img-top {
+.card-img {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -164,7 +164,7 @@
   border-color: #255c2e;
   font-weight: bold;
   letter-spacing: 0.05em;
-  border-radius: 0;
+  border-radius: 4px;
 }
 
 .custom-btn:hover,
@@ -191,10 +191,27 @@
   padding: 20px;
   margin: auto;
 }
-#contactHeader {
+#contact-header {
   text-align: center;
 }
 /*Contact*/
 .contactForm {
   background-color: #d7f2c4;
+  color: #1b4622;
+}
+
+.custom-reset-btn {
+  color: white;
+  background-color: #4f5e51;
+  border-color: #4f5e51;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+}
+.custom-reset-btn:hover,
+.custom-reset-btn:focus,
+.custom-reset-btn:active {
+  background: #637565;
+  color: #ffffff;
+  border-color: #637565;
 }
