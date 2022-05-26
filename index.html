@@ -13,38 +13,32 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+    <script defer src="./nav.js"></script>
     <title>Homepage</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo_header">
-        <a href="#" class="logo">AH</a>
-      </div>
-      <ul class="main_nav">
-        <li>
-          <a href="#" class="nav_links">About</a>
-        </li>
-        <li>
-          <a href="#" class="nav_links">Resume</a>
-        </li>
-        <li>
-          <a href="#" class="nav_links">Projects</a>
-        </li>
-        <li>
-          <a href="#" class="nav_links">Contact</a>
-        </li>
-        <li>
-          <a href="#" class="nav_links">Github</a>
-        </li>
-      </ul>
-    </nav>
-    
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 id="navbar-logo">AH</h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-links">About</a></li>
+          <li><a href="#" class="nav-links">Resume</a></li>
+          <li><a href="#" class="nav-links">Projects</a></li>
+          <li><a href="#" class="nav-links">Github</a></li>
+          <li><a href="#" class="nav-links ">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    
 <div class="page">
     <div class="about row py-5 mt-5">
-        <div class='about-portrait col-12 col-md-5'>
-           <img id="picOfAndres" src="pictures/IMG-9198.jpg" alt="a headshot photo of Andres Herrera " id="picOfAndres">
+        <div class='portrait-container col-12 col-md-5'>
+           <img id="andres-portrait" src="pictures/IMG-9198.jpg" alt="a headshot photo of Andres Herrera " >
         </div>
         <div class='about-bio col-12 col-md-7 p-5'>
             <h2>Hey, i'm Andres, a recent CS graduate from PSU</h2>
@@ -58,16 +52,16 @@
         </div>
     </div>
     <div class="resume row py-5 mt-1">
-        <div class="Education col-12 col-md-5 p-5">
-            <h2>Education</h2>
+        <div class="education col-12 col-md-5 p-5">
+            <h2>education</h2>
             <li>
                 <h3>Portland State University</h2>
                 <p> B.S. Computer Science, Spring '22</p>
             </li>
         </div>
-        <div class="Languages col-12 col-md-7 p-5">
+        <div class="languages col-12 col-md-7 p-5">
             <h2>Languages</h2>
-            <div class="languages-List">
+            <div class="languages-list">
                 <div>Typescript</div>
                 <div>CSS</div>
                 <div>HTML</div>
@@ -110,9 +104,52 @@
 
 
 
+    <form class="border rounded mx-auto my-4 p-4 contactForm">
+      <div id="contactHeader">
+        <h1>Contact Me</h1>
+      </div>
+    <div class="loginInfo mt-4 ">
+      <div class="form-group row mt-2">
+        <div class="col-12">
+            <label for="inputUsername" class="col-sm-2 col-form-label">Name </label>
+        </div>
+        <div class="col-12">
+          <input type="text"  class="form-control" id="inputUsername" placeholder="Name">
+        </div>
+      </div>
+      <div class="form-group row mt-2">
+        <div class="col-12 ">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email: </label>
+        </div>
+        <div class="col-12">
+          <input type="email"  class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group row mt-2">
+        <div class="col-12 ">
+          <label for="inputMessage" class="col-sm-2 col-form-label">Message </label>
+        </div>  
+        <div class="col-12 ">
+            <textarea class="form-control" id="inputMessage" rows="6"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="submitButtons row mt-4">
+      <div class="col-6">
+        <button type="submit" class="btn btn-primary col-12 ">Submit</button>
+      </div>
+      <div class="col-6">
+        <button type="reset" class="btn btn-secondary col-12 ">reset</button>
+      </div>
+    </div>
+  </div>
+  </form>
+
 
 
     <!---->
+  <script src="test.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

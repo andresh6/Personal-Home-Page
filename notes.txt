@@ -1,0 +1,7 @@
+1.change mt and py
+2.navbar links
+3.navbar should be js
+4.contact form
+
+.email function
+.write report
