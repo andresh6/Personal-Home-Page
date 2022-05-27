@@ -19,7 +19,7 @@
   <body>
 <div class="page">
     <!--Navbar-->
-    <div class="nav-container">
+    <div class="nav-container mb-4">
       <nav class="navbar">
         <h1 id="navbar-logo">AH</h1>
         <div class="menu-toggle" id="mobile-menu">
@@ -37,12 +37,14 @@
       </nav>
     </div>
 <!--About Page-->
-  <div class="about row" id="about">
-        <div class='portrait-container col-12 col-md-5'> 
+<div class="page-contents p-2">
+<div class="container ">
+  <div class="about row justify-content-center" id="about">
+        <div class='portrait-container p-2 '> 
            <img id="andres-portrait" src="pictures/IMG-9198.jpg" alt="a headshot photo of Andres Herrera " >
         </div>
         <div class='about-bio col-12 col-md-7 p-5'>
-            <h2>Hey, i'm Andres, a recent CS graduate from PSU</h2>
+            <h2>Hey, i'm Andres - a recent CS graduate from PSU</h2>
             <p class= 'mt-5'>
             During my time at Portland State I have worked on an array 
             of projects with many technologies. Most recently I have worked on making a fully functioning website dedicated to 
@@ -50,9 +52,13 @@
             Sports have been integral in my upbringing and working on this project has allowed me to share my love of athletics
             with others. I hope to continue working on meaningful technologies after I graduate.
             </p>
+            <a href="mailto:herrera.andres6@gmail.com" class ="email-link">Herrera.Andres6@gmail.com</a>  
         </div>
     </div>
-    <div class="resume row py-5 mt-1" id="resume">
+    </div>  
+    <!--Resume-->
+    <div class="container mt-5 p-2">
+    <div class="resume row " id="resume">
         <div class="education col-12 col-md-5 p-5">
             <h2>Education</h2>
             <li>
@@ -74,11 +80,12 @@
        <div>  
     </div>
   </div>
+  </div>
     <!--Projects-->
-  <div class="card-container">
+  <div class="card-container  mx-auto my-4 p-2 ">
     <div class="card-deck row" id="projects">
       <div class="card ">
-        <img class="card-img" src="./pictures/GitHub-Mark.png" alt="Github logo">
+        <img class="card-img" src="./pictures/kisspng-file-transfer-protocol-ftps-pdf-release-5adf2585922e57.4930989915245735735988.png" alt="Github logo">
         <div class="card-body">
           <h5 class="card-title">FTP-Server</h5>
           <p class="card-text">Allows transfering of files to and and from your local network and a remote server</p>
@@ -147,7 +154,7 @@
   </div>
   </form>
 
-
+</div>  
 
     <!---->
   <script src="menu.js"></script>
