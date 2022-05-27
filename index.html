@@ -17,6 +17,7 @@
     <title>Homepage</title>
   </head>
   <body>
+<div class="page">
     <!--Navbar-->
     <div class="nav-container">
       <nav class="navbar">
@@ -27,18 +28,17 @@
           <span class="bar"></span>
         </div>
         <ul class="nav-menu">
-          <li><a href="#" class="nav-links">About</a></li>
-          <li><a href="#" class="nav-links">Resume</a></li>
-          <li><a href="#" class="nav-links">Projects</a></li>
-          <li><a href="#" class="nav-links">Github</a></li>
-          <li><a href="#" class="nav-links ">Contact</a></li>
+          <li><a href="#about" class="nav-links">About</a></li>
+          <li><a href="#resume" class="nav-links">Resume</a></li>
+          <li><a href="#projects" class="nav-links">Projects</a></li>
+          <li><a href="#contact" class="nav-links ">Contact</a></li>
+          <li><a href="https://github.com/andresh6" target="_blank" class="nav-links">Github</a></li>
         </ul>
       </nav>
     </div>
 <!--About Page-->
-<div class="page">
-    <div class="about row py-5 mt-5">
-        <div class='portrait-container col-12 col-md-5'>
+  <div class="about row" id="about">
+        <div class='portrait-container col-12 col-md-5'> 
            <img id="andres-portrait" src="pictures/IMG-9198.jpg" alt="a headshot photo of Andres Herrera " >
         </div>
         <div class='about-bio col-12 col-md-7 p-5'>
@@ -52,7 +52,7 @@
             </p>
         </div>
     </div>
-    <div class="resume row py-5 mt-1">
+    <div class="resume row py-5 mt-1" id="resume">
         <div class="education col-12 col-md-5 p-5">
             <h2>Education</h2>
             <li>
@@ -70,40 +70,42 @@
                 <div>Java</div>
                 <div>Javascript</div>
                 <div>Python</div>
-              </div>
-            <div>  
-        </div>
+            </div>
+       <div>  
     </div>
+  </div>
     <!--Projects-->
-    <div class="card-deck">
-      <div class="card">
+  <div class="card-container">
+    <div class="card-deck row" id="projects">
+      <div class="card ">
         <img class="card-img" src="./pictures/GitHub-Mark.png" alt="Github logo">
         <div class="card-body">
           <h5 class="card-title">FTP-Server</h5>
           <p class="card-text">Allows transfering of files to and and from your local network and a remote server</p>
-          <a href="#" class="btn custom-btn">Github</a>
+          <a href="https://github.com/andresh6/FTP-server" target="_blank" class="btn custom-btn">Github</a>
         </div>
       </div>
-      <div class="card">
+      <div class="card ">
         <img class="card-img" src="./pictures/curlo.png" alt="Curlo landing page">
         <div class="card-body">
           <h5 class="card-title">Curlo</h5>
           <p class="card-text">A website dedicated to curling. Allows Hosts and Teams to create accounts and set up games.
              Teams will receive a glicko rating depending on there performance and will be able to see a rating table with top curling teams</p>
-          <a href="#" class="btn custom-btn">Github</a>
+          <a href="https://github.com/curling-hub/curling-hub" target="_blank" class="btn custom-btn">Github</a>
         </div>
       </div>
-      <div class="card">
+      <div class="card ">
         <img class="card-img" src="./pictures/GitHub-Mark.png" alt="Github logo">
         <div class="card-body">
           <h5 class="card-title">ChocAn</h5>
           <p class="card-text">A fictitious health care company. Allows fo member management as well as creating of weekly reports</p>
-          <a href="#" class="btn custom-btn">Github</a>
+          <a href="https://github.com/andresh6/ChocAn" target="_blank"class="btn custom-btn">Github</a>
         </div>
       </div>
     </div>
+    </div>  
 <!--Contact-->
-    <form class="border rounded mx-auto my-4 p-4 contactForm">
+    <form class="border rounded mx-auto my-4 p-4 contactForm" id="contact">
       <div id="contact-header">
         <h1>Contact Me</h1>
       </div>
