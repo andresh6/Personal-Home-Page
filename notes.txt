@@ -1,9 +1,5 @@
 1.change mt and py
-2.navbar links
 4.contact form
-5.get rid of white space under navbar
-6.pin github buttons to bottom of containers
-7.email function
 8.write report
-9.align contact form headers with fields
 10. about page  overlap
+sumbit button overlap

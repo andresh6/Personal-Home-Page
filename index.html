@@ -84,16 +84,18 @@
     <!--Projects-->
   <div class="card-container  mx-auto my-4 p-2 ">
     <div class="card-deck row" id="projects">
-      <div class="card ">
-        <img class="card-img" src="./pictures/kisspng-file-transfer-protocol-ftps-pdf-release-5adf2585922e57.4930989915245735735988.png" alt="Github logo">
+      <div class="card mt-3">
+        <img class="card-img" src="./pictures/ftp-logo.png" alt="Github logo">
         <div class="card-body">
           <h5 class="card-title">FTP-Server</h5>
-          <p class="card-text">Allows transfering of files to and and from your local network and a remote server</p>
+          <p class="card-text">Allows user to connect to a remote network from their local machine and add, delete, and transfer
+            files and folders between networks. Terminal commands were made to imitate well known linux commands.
+          </p>
           <a href="https://github.com/andresh6/FTP-server" target="_blank" class="btn custom-btn">Github</a>
         </div>
       </div>
-      <div class="card ">
-        <img class="card-img" src="./pictures/curlo.png" alt="Curlo landing page">
+      <div class="card mt-3">
+        <img class="card-img" src="./pictures/curloLogo1.png" alt="Curlo landing page">
         <div class="card-body">
           <h5 class="card-title">Curlo</h5>
           <p class="card-text">A website dedicated to curling. Allows Hosts and Teams to create accounts and set up games.
@@ -101,17 +103,62 @@
           <a href="https://github.com/curling-hub/curling-hub" target="_blank" class="btn custom-btn">Github</a>
         </div>
       </div>
-      <div class="card ">
+      <div class="card mt-3">
         <img class="card-img" src="./pictures/GitHub-Mark.png" alt="Github logo">
         <div class="card-body">
           <h5 class="card-title">ChocAn</h5>
-          <p class="card-text">A fictitious health care company. Allows fo member management as well as creating of weekly reports</p>
+          <p class="card-text">A fictitious health care company for. Allows for manager and provider login and the adding, deletion
+             and editing of members and services. Also allows for th printing of weekly reports of member's information.
+          </p>
           <a href="https://github.com/andresh6/ChocAn" target="_blank"class="btn custom-btn">Github</a>
         </div>
       </div>
     </div>
     </div>  
 <!--Contact-->
+<form class="border rounded mx-auto my-4 p-4 contact-form" id="contact">
+  <div id="contact-header">
+    <h1>Contact Me</h1>
+  </div>
+<div class="login-info mt-4 ">
+  <div class="form-group row mt-2">
+    <div class="col-12">
+        <label for="input-username" class=" col-form-label">Name </label>
+    </div>
+    <div class="col-12">
+      <input type="text"  class="form-control" id="input-username" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group row mt-2">
+    <div class="col-12 ">
+      <label for="inputEmail" class=" col-form-label">Email: </label>
+    </div>
+    <div class="col-12">
+      <input type="email"  class="form-control" id="input-email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row mt-2">
+    <div class="col-12 ">
+      <label for="input-message" class=" col-form-label">Message </label>
+    </div>  
+    <div class="col-12 ">
+        <textarea class="form-control" id="input-message" rows="6"></textarea>
+    </div>
+  </div>
+</div>
+<div class="submitButtons row mt-4">
+  <div class="col-6">
+    <button type="submit" class="btn custom-btn col-12 ">Submit</button>
+  </div>
+  <div class="col-6">
+    <button type="reset" class="btn custom-reset-btn col-12 ">Reset</button>
+  </div>
+</div>
+</div>
+</form>
+
+
+<!--
     <form class="border rounded mx-auto my-4 p-4 contactForm" id="contact">
       <div id="contact-header">
         <h1>Contact Me</h1>
@@ -142,7 +189,6 @@
         </div>
       </div>
     </div>
-
     <div class="submitButtons row mt-4">
       <div class="col-6">
         <button type="submit" class="btn custom-btn col-12 ">Submit</button>
@@ -153,6 +199,12 @@
     </div>
   </div>
   </form>
+
+
+
+
+
+-->
 
 </div>  
 

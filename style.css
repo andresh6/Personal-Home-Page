@@ -232,7 +232,7 @@ body {
 }
 .card {
   max-width: 350px;
-  min-width: 350px;
+  min-width: 250px;
   margin-top: 10px;
 }
 
@@ -242,7 +242,7 @@ body {
   border-width: 1px;
   border-style: solid;
 }
-.contactForm {
+.contact-form {
   min-width: 250px;
   max-width: 500px;
   max-height: 700px;
@@ -251,14 +251,12 @@ body {
   border-radius: 10px;
   padding: 20px;
   margin: auto;
+  background-color: #d9f2c4;
+  color: #1b4622;
+  border-radius: 5% 5% 5% 5%;
 }
 #contact-header {
   text-align: center;
-}
-/*Contact*/
-.contactForm {
-  background-color: #d9f2c4;
-  color: #1b4622;
 }
 
 .custom-reset-btn {
