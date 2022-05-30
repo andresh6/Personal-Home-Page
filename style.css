@@ -8,7 +8,6 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 /*Navbar*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,7 +34,7 @@ body {
 #navbar-logo {
   cursor: pointer;
 }
-.nav-menu {
+.nav-items {
   display: grid;
   grid-template-columns: repeat(5, auto);
   list-style: none;
@@ -51,7 +50,7 @@ body {
 .nav-links:hover {
   color: #d7f2c4;
 }
-.menu-toggle .bar {
+.hamburger-menu .bar {
   width: 25px;
   height: 3px;
   margin: 5px auto;
@@ -61,7 +60,7 @@ body {
   .nav-container {
     position: relative;
   }
-  .nav-menu {
+  .nav-items {
     display: grid;
     grid-template-columns: auto;
     background: #4bbd50;
@@ -75,7 +74,7 @@ body {
   #navbar-logo {
     margin-left: 20px;
   }
-  .nav-menu.active {
+  .nav-items.active {
     background: #255c2e;
     left: 0;
     opacity: 1;
@@ -99,7 +98,7 @@ body {
     right: 5%;
     transform: translate(5%, 20%);
   }
-  .menu-toggle .bar {
+  .hamburger-menu .bar {
     display: block;
   }
 }
@@ -107,9 +106,8 @@ body {
 .page {
   width: 100%;
   background-color: #b3db98;
-  /*  background-color: #b3db98;
-  background-color: #d7f2c4;*/
 }
+
 /*About*/
 #andres-portrait {
   padding: 10px;
@@ -129,41 +127,8 @@ body {
   color: black;
   text-decoration: underline;
 }
-/*
-.about {
-  padding: 50px;
-}
-.portrait-container {
-  padding: 10px;
-  width: 100%;
-  text-align: center;
-  background-color: #b3db98;
-  border-radius: 5% 0% 0% 5%;
-}
-#andres-portrait {
-  padding: 10px;
-  border-radius: 50%;
-  object-fit: cover;
-  width: 350px;
-  height: 350px;
-  max-height: 100%;
-  max-width: 100%;
-}
-.about-bio {
-  background-color: #d9f2c4;
-  border-radius: 5% 5% 5% 5%;
-}
-@media screen and (max-width: 767px) {
-  .portrait-container {
-    border-radius: 5% 5% 0% 0%;
-  }
-  .about-bio {
-    border-radius: 0% 0% 5% 5%;
-  }
-}
-*/
-/*Resume*/
 
+/*Resume*/
 .languages-list {
   padding: 20px;
   display: grid;
