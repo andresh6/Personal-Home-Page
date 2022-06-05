@@ -1,3 +1,6 @@
+/* * {
+  border: 1px solid transparent;
+} */
 html,
 body {
   width: 100%;
@@ -21,9 +24,10 @@ body {
   display: grid;
   grid-template-columns: 0.2fr auto 1fr;
   align-items: center;
-  height: 80px;
+  height: 70px;
   width: 90%;
   margin: 0 auto;
+  border: solid 1px #255c2e;
 }
 #navbar-logo {
   color: white;
@@ -34,8 +38,10 @@ body {
   cursor: pointer;
 }
 .nav-items {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
+  /* display: grid;
+  grid-template-columns: repeat(5, auto); */
+  display: flex;
+  /* justify-content: end; */
   list-style: none;
   text-align: center;
   width: 70%;
@@ -45,6 +51,7 @@ body {
 .nav-links {
   color: white;
   text-decoration: none;
+  margin: 20px;
 }
 .nav-links:hover {
   color: #d7f2c4;
@@ -53,7 +60,12 @@ body {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background: white;
+  background: #255c2e;
+}
+@media screen and (min-width: 768px) {
+  .nav-items {
+    justify-content: end;
+  }
 }
 @media screen and (max-width: 767px) {
   .nav-container {
@@ -66,7 +78,7 @@ body {
     margin: 0;
     width: 100%;
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: -100%;
     opacity: 0;
   }
@@ -99,15 +111,21 @@ body {
   }
   .hamburger-menu .bar {
     display: block;
+    background: white;
   }
 }
 /*Page*/
 .page {
   width: 100%;
+  min-height: 100%;
   background-color: #b3db98;
+  /* border: #b3db98 solid 1px; */
 }
 
 /*About*/
+.about {
+  padding: 10px;
+}
 #andres-portrait {
   padding: 10px;
   border-radius: 50%;
@@ -128,39 +146,47 @@ body {
 }
 
 /*Resume*/
-.languages-list {
+.resume {
+  padding: 20px;
+}
+.languages-list,
+.technologies-list {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.languages-list > div {
+.languages-list > div,
+.technologies-list > div {
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
   padding: 10px;
 }
-.languages {
+.languages,
+.technologies {
   text-align: center;
   background-color: #d9f2c4;
   border-radius: 0% 5% 5% 0%;
 }
-.education {
+.education,
+.work-experience {
   text-align: center;
   background-color: #d9f2c4;
   list-style-type: none;
   border-radius: 5% 0% 0% 5%;
 }
 @media screen and (max-width: 767px) {
-  .education {
+  .education,
+  .work-experience {
     border-radius: 5% 5% 0% 0%;
   }
-  .languages {
+  .languages,
+  .technologies {
     border-radius: 0% 0% 5% 5%;
   }
 }
 /*Projects*/
-
 .card-img {
   width: 100%;
   height: 250px;
@@ -170,9 +196,8 @@ body {
   background-color: #d9f2c4;
   text-align: center;
 }
-
 .card-deck {
-  padding: 50px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -237,4 +262,24 @@ body {
   background: #637565;
   color: #ffffff;
   border-color: #637565;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #b3db98;
+  color: white;
+  justify-content: space-between;
+  display: flex;
+  height: 40px;
+}
+.github-link-img {
+  height: 35px;
+  width: 35x;
+}
+
+.copyright {
+  text-align: center;
+  bottom: 0;
 }

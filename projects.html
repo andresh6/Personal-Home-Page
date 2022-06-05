@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Andres Herrera</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="nav-container mb-4">
+        <nav class="navbar">
+          <h1 id="navbar-logo">AH</h1>
+          <div class="hamburger-menu" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-items">
+            <li><a href="./index.html" class="nav-links">About</a></li>
+            <li><a href="./resume.html" class="nav-links">Resume</a></li>
+            <li><a href="./projects.html" class="nav-links">Projects</a></li>
+            <li><a href="./contact.html" class="nav-links">Contact</a></li>
+            <li>
+              <a
+                href="https://github.com/andresh6"
+                target="_blank"
+                class="nav-links"
+                >Github</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Projects-->
+      <div class="card-container mx-auto my-4 p-2">
+        <div class="card-deck row" id="projects-section">
+          <div class="card mt-3">
+            <img
+              class="card-img"
+              src="./pictures/ftp-logo.png"
+              alt="FTP logo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">FTP-Server</h5>
+              <p class="card-text">
+                Allows user to connect to a remote network from their local
+                machine and add, delete, and transfer files and folders between
+                networks. Terminal commands were made to imitate well known
+                linux commands.
+              </p>
+              <a
+                href="https://github.com/andresh6/FTP-server"
+                target="_blank"
+                class="btn custom-btn"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="card mt-3">
+            <img
+              class="card-img"
+              src="./pictures/curlo-logo.png"
+              alt="Curlo logo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Curlo</h5>
+              <p class="card-text">
+                A website dedicated to curling. Allows Hosts and Teams to create
+                accounts and set up games. Teams will receive a glicko rating
+                depending on there performance and will be able to see a rating
+                table with top curling teams
+              </p>
+              <a
+                href="https://github.com/curling-hub/curling-hub"
+                target="_blank"
+                class="btn custom-btn"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="card mt-3">
+            <img
+              class="card-img"
+              src="./pictures/github-logo.png"
+              alt="Github logo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">ChocAn</h5>
+              <p class="card-text">
+                A fictitious health care company for. Allows for manager and
+                provider login and the adding, deletion and editing of members
+                and services. Also allows for th printing of weekly reports of
+                member's information.
+              </p>
+              <a
+                href="https://github.com/andresh6/ChocAn"
+                target="_blank"
+                class="btn custom-btn"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="footer">
+        <div class="copyright">&copy 2022</div>
+        <div class="git-link">
+          <a href="https://github.com/andresh6" target="_blank">
+            <img
+              class="github-link-img"
+              src="./pictures/github-logo.png"
+              alt="Github logo"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Scripts-->
+    <script src="menu.js"></script>
+  </body>
+</html>
